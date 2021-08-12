@@ -17,6 +17,7 @@ body{
   padding-top: 39px;
   font: 500 30px/37px 'montserratmedium', arial, helvetica, sans-serif;
   letter-spacing: 0.07em;
+  color: #fff;
 }
 
 .language {
@@ -114,13 +115,13 @@ body{
   position: relative;
   top: 0;
   background: linear-gradient( to left, transparent 68%, #000 32%);
-  z-index: 1;
+  z-index: -1;
 }
 
 .collection {
   margin-left: 186px;
   padding: 170px 0 11% 41%;
-  background: 0 70% no-repeat url(img/главная.svg)
+  background: 0 70% no-repeat url(img/главная.svg);
 }
 
 .collection__title {
@@ -218,31 +219,69 @@ body{
 }
 
 .contacts__elements {
+  display: inline-block;
   position: relative;
+  margin-bottom: 2px;
   width: 43px;
   height: 43px;
   border-radius: 50%;
-  color: #fff;
+  background-color: #fff;
   z-index: 5;
 }
 
+.contacts__elements_inst {
+  position: relative;
+  margin-left: 52px;
+  margin-right: 8px;
+}
+
+.inst__element {
+  position: absolute;
+  width: 43px;
+  height: 43px;
+  background: center no-repeat url(img/inst.svg); 
+}
+
+.contacts__elements_vk {
+  margin-right: 8px;
+}
+
+.vk__element {
+  position: absolute;
+  width: 43px;
+  height: 43px;
+  background: center no-repeat url(img/vk.svg); 
+}
+
+.fb__element {
+  position: absolute;
+  width: 43px;
+  height: 43px;
+  background: center no-repeat url(img/fb.svg);
+}
+
 .helper__elements {
-  display: flex;
-  justify-content: center;
+  display: inline-block;
+  margin-left: 34%; 
+  padding-top: 12px;
 }
 
 .big__ellipse {
+  display: inline-block;
+  margin-left: 8px;
   width: 24px;
   height: 42px;
   border: solid 2px #000;
   border-radius: 15px;
-  margin-top: 13px;
 }
 
 .small__ellipse {
+  display: inline-block;
   position: absolute;
+  margin-left: -15px;
   top: 23px;
-  height: 9px;
+  height: 8px;
   color: #000;
   border-left: solid 2px #000;
+  z-index: 2;
 }
