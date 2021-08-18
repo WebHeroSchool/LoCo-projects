@@ -43,7 +43,8 @@ body{
   height: 7px;
 }
 
-.header__arrow_left {
+.header__arrow_left,
+.header__arrow_right {
   position: relative;
   left: 0;
   width: 7px;
@@ -57,12 +58,7 @@ body{
 .header__arrow_right {
   position: absolute;
   left: 9px;
-  width: 7px;
-  height: 2px;
-  display: inline-block;
   transform: rotate(-43deg);
-  float: right;
-  background-color: #fff;
 }
 
 .hamburger__menu {
@@ -87,8 +83,7 @@ body{
 }
 
 .menu__btn > span,
-.menu__btn > span::before,
-.menu__btn > span::after {
+.menu__btn > span::before {
   display: block;
   position: absolute;
   width: 100%;
@@ -182,7 +177,7 @@ body{
   font: 500 13px/0 'montserratmedium', arial, helvetica, sans-serif;
 }
 
-.collection__recomend{
+.collection__recomend {
   text-decoration: none;
   margin-right: 16px;
   font: 500 13px/0 'montserratmedium', arial, helvetica, sans-serif;
@@ -193,22 +188,17 @@ body{
 .collection__arrow {
   display: inline-block;
   cursor: pointer;
-  width: 43px;
-  height: 10px;
-}
-
-.collection__arrow div {
-  display: inline-block;
   position: relative;
-  top: -3px;
   width: 45px;
   height: 2px;
+  top: -3px;
+  left:0;
   background-color: #000;
   box-shadow: 0 3px 5px rgba(0, 0, 0, .2);
-  left:0;
 }
 
-.collection__arrow div::after {
+.collection__arrow::after,
+.collection__arrow::before {
   content: '';
   position: absolute;
   width: 8px;
@@ -219,20 +209,14 @@ body{
   transform: rotate(45deg);
 }
 
-.collection__arrow div::before {
-  content: '';
-  position: absolute;
-  width: 8px;
-  height: 2px;
+.collection__arrow::before {
   top: 3px;
-  right: 0;
-  background-color: #000;
   box-shadow: 0 3px 5px rgba(0, 0, 0, .2);
   transform: rotate(-45deg);
 }
 
-.collection__arrow:hover {
-  animation: collection__arrow 1s linear 1;
+.collection__arrow {
+  animation: collection__arrow 1.2s linear 1s infinite;
 }
 
 @keyframes collection__arrow {
@@ -245,6 +229,10 @@ body{
   100% {
     left: 0;
   }
+}
+
+.scrol__collection_mobile {
+  display: none;
 }
 
 .elements {
@@ -319,4 +307,152 @@ body{
   color: #000;
   border-left: solid 2px #000;
   z-index: 2;
+}
+
+@media (max-width: 414px) {
+  .header {
+    background: none;
+    background-color: #fff;
+    height: 69px;
+  }
+
+  .logo {
+    margin: 0;
+    padding: 14px 0 0 26px;
+    color: #000;
+  }
+
+  .language {
+    display: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .header__arrow,
+  .header__arrow_left,
+  .header__arrow_right {
+    display: none;
+    margin: 0;
+    padding: 0;
+    width: 0;
+    height: 0;
+  }
+
+  .hamburger__menu {
+    width: 0;
+    height: 0;
+  }
+
+  .menu__btn {
+    top: 30px;
+    right: 22px;
+    width: 26px;
+    height: 3px;
+  }
+
+  .menu__btn > span,
+  .menu__btn > span::before {
+    height: 3px;
+  }
+
+  .menu__btn > span::before {
+    top: 7px;
+  }
+
+  .menu {
+    width: 100%;
+  }
+
+  .menu__color {
+    width: 70px;
+    height: 69px;
+  }
+
+  .first__page {
+    background: none;
+    height: 33%;
+  }
+
+  .collection {
+    margin: -6px 0 0 0;
+    padding: 0;
+    background: center center no-repeat url(img/главная_mobil.svg)
+  }
+
+  .collection__title {
+    margin: 0;
+    padding: 118% 0 26px 26px;
+    font: bold 50px/51px 'montserratbold', arial, helvetica, sans-serif;
+  }
+
+  .collection__subtitle {
+    display: none;
+  }
+
+  .collection__button {
+    display: none;
+  }
+
+  .collection__recomend {
+    display: none;
+  }
+
+  .collection__arrow {
+    display: none;
+  }
+
+  .contacts__elements {
+    display: none;
+  }
+
+  .helper__elements {
+    display: none;
+  }
+
+  .collection__mobile {
+    cursor: pointer;
+    margin-left: 43%;
+    padding-bottom: 30px;
+    display: inline-block;
+    position: relative;
+    width: 30px;
+    height: 15px;
+    color: #000;
+    z-index: 3;
+  }
+
+  .collection__mobile::after,
+  .collection__mobile::before {
+    content: '';
+    position: relative;
+    background-color: #020202;
+    width: 21px;
+    height: 3px;
+    transform: rotate(43deg);
+    float: right;
+  }
+
+  .collection__mobile::before {
+    top: 0px;
+    position: absolute;
+    left: 23px;
+    transform: rotate(137deg);
+  }
+
+  .collection__mobile {
+    animation: collection__mobile 1.2s linear 1s infinite;
+  }
+
+  @keyframes collection__mobile {
+    0% {
+      top: 0;
+    }
+    50%{
+      top: 10px;
+    }
+    100%{
+      top: 0;
+    }
+  }
+
 }
