@@ -311,33 +311,82 @@ body{
   z-index: 2;
 }
 
+@media(max-width: 1366px) {
+  .language {
+    margin-left: 14%;
+  }
+
+  .header__arrow {
+    margin-left: 17%;
+  }
+
+  .collection {
+    background-size: 43%;
+    margin-left: 10%;
+    padding-top: 22%;
+    padding-bottom: 13%;
+  }
+
+  .collection__title {
+    padding-top: 90px;
+  }
+}
+
+@media(max-width: 1024px) {
+  .language {
+    margin-left: 10%;
+  }
+
+  .header__arrow {
+    margin-left: 14%;
+  }
+
+  .collection {
+    padding-top: 18%;
+    padding-bottom: 9%;
+  }
+
+  .collection__title {
+    font: bold 50px/51px 'montserratbold', arial, helvetica, sans-serif;
+  }
+
+  .collection__subtitle {
+    width: 400px;
+    font: normal 15px/18px 'montserratregular', arial, helvetica, sans-serif;
+  }
+
+  .collection__button {
+    padding: 12px 25px;
+    margin-right: 30px;
+  }
+
+  .collection__recomend {
+    margin-right: 12px;
+  }
+
+  .collection__arrow {
+    width: 40px;
+  }
+}
+
 @media (max-width: 414px) {
   .header {
-    background: none;
-    background-color: #fff;
     height: 69px;
   }
 
   .logo {
     margin: 0;
     padding: 14px 0 0 26px;
-    color: #000;
   }
 
   .language {
     display: none;
-    margin: 0;
-    padding: 0;
   }
 
   .header__arrow,
   .header__arrow_left,
   .header__arrow_right {
     display: none;
-    margin: 0;
-    padding: 0;
-    width: 0;
-    height: 0;
   }
 
   .hamburger__menu {
@@ -363,7 +412,7 @@ body{
 
   .menu {
     width: 100%;
-    height: 650%;
+    height: 900%;
   }
 
   .menu__item {
@@ -381,14 +430,14 @@ body{
   }
 
   .collection {
-    margin: -6px 0 0 0;
+    margin: 13% 0 0 0;
     padding: 0;
     background: center center no-repeat url(img/главная_mobil.svg)
   }
 
   .collection__title {
     margin: 0;
-    padding: 118% 0 26px 26px;
+    padding: 118% 0 15px 26px;
     font: bold 50px/51px 'montserratbold', arial, helvetica, sans-serif;
   }
 
@@ -412,14 +461,14 @@ body{
     display: none;
   }
 
-  .helper__elements {
+  .elements {
     display: none;
   }
 
   .collection__mobile {
     cursor: pointer;
     margin-left: 43%;
-    padding-bottom: 30px;
+    padding-bottom: 41px;
     display: inline-block;
     position: relative;
     width: 30px;
@@ -463,39 +512,111 @@ body{
   }
 }
 
-@media(max-width: 1130px) {
-  
+@media(max-width: 320px max-height: 568px) {
+  .collection__title {
+    margin-top: 20px;
+    padding-top: 133%;
+    font: bold 40px/41px 'montserratbold', arial, helvetica, sans-serif;
+  }
+
+  .collection {
+    background-size: 108%;
+    padding-bottom: 10%;
+  }
 }
 
-@media(max-width: 1350px) {
+@media(max-width: 768px) {
+  .header {
+    background: none;
+    background-color: #fff;
+  }
+
+  .logo {
+    color: #000;
+  }
+
   .language {
-    margin-left: 12%;
+    margin-left: 15%;
+    color: #000;
   }
 
   .header__arrow {
-    margin-left: 16%;
+    margin-left: 20%;
+  }
+
+  .header__arrow_left,
+  .header__arrow_right {
+    background-color: #000;
+  }
+
+  .first__page {
+    background: none; 
   }
 
   .collection {
-    background-size: 42%;
-    margin-left: 140px;
-    padding-left: 38%;
-    padding-bottom: 12%;
-  }
-
-  .collection__title {
-    font: bold 70px/71px 'montserratbold', arial, helvetica, sans-serif;
-  }
-
-}
-
-
-@media(max-width: 1920px) {
-  .collection__title {
+    background-size: 48%;
+    margin-left: 8%;
+    padding-left: 41%;
     padding-top: 15%;
   }
 
-  .collection {
-    padding-bottom: 16%;
+  .collection__title {
+    padding-left: 40px;
+    }
+
+  .collection__subtitle {
+    width: 320px;
+    padding-left: 40px;
+    font: normal 10px/17px 'montserratregular', arial, helvetica, sans-serif;
+  }
+
+  .collection__button {
+    display: none;
+  }
+
+  .collection__recomend {
+    padding-left: 45px;
+  }
+
+  .contacts__elements {
+    background-color: #E5E5E5;
+  }
+
+  .helper__elements {
+    display: none;
   }
 }
+
+@media(min-width: 1650px) {
+  .collection {
+    padding-top: 10%;
+    padding-bottom: 14%;
+    background-size: 38%;
+  }
+
+  .collection__title {
+    font: bold 84px/86px 'montserratbold', arial, helvetica, sans-serif;
+    margin-bottom: 20px;
+  }
+
+  .collection__subtitle {
+    width: 550px;
+    font: normal 18px/22px 'montserratregular', arial, helvetica, sans-serif;
+    margin-bottom: 52px;
+  }
+
+  .contacts__elements_inst {
+    margin-left: 75px;
+    margin-right: 16px;
+  }
+
+  .contacts__elements_vk {
+    margin-right: 16px;
+  }
+
+  .helper__elements {
+    margin-left: 38%;
+  }
+  
+}
+
