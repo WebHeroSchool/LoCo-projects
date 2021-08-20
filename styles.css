@@ -682,6 +682,7 @@ body{
 
 @media(max-width: 320px) {
   .collection__title {
+    width: 280px;
     margin-top: 20px;
     padding-top: 133%;
     font: bold 40px/41px 'montserratbold', arial, helvetica, sans-serif;
