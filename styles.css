@@ -345,11 +345,11 @@ body{
 
 @media(max-width: 1366px) {
   .language {
-    margin-left: 14%;
+    margin-left: 10%;
   }
 
   .header__arrow {
-    margin-left: 17%;
+    margin-left: 15%;
   }
 
   .collection {
@@ -366,11 +366,11 @@ body{
 
 @media(max-width: 1024px) {
   .language {
-    margin-left: 10%;
+    margin-left: 3%;
   }
 
   .header__arrow {
-    margin-left: 14%;
+    margin-left: 8%;
   }
 
   .collection {
@@ -388,8 +388,7 @@ body{
   }
 
   .collection__button {
-    padding: 12px 25px;
-    margin-right: 30px;
+    display: none
   }
 
   .collection__recomend {
@@ -401,7 +400,7 @@ body{
   }
 }
 
-@media(max-width: 768px) {
+@media(max-width: 780px) {
   .header {
     background: none;
     background-color: #fff;
@@ -430,7 +429,7 @@ body{
   }
 
   .collection {
-    background-size: 48%;
+    background-size: 43%;
     margin-left: 8%;
     padding-left: 41%;
     padding-top: 15%;
@@ -443,7 +442,7 @@ body{
   .collection__subtitle {
     width: 320px;
     padding-left: 40px;
-    font: normal 10px/17px 'montserratregular', arial, helvetica, sans-serif;
+    font: normal 15px/18px 'montserratregular', arial, helvetica, sans-serif;
   }
 
   .collection__button {
@@ -463,15 +462,14 @@ body{
   }
 }
 
-@media (max-width: 414px) {
+@media(max-width: 580px) {
   .header {
-    height: 69px;
+    height: 90px;
   }
 
   .logo {
-    margin: 0;
-    padding: 14px 0 0 26px;
-    color: #000;
+    padding-top: 30px;
+    font: 500 34px/41px 'montserratmedium', arial, helvetica, sans-serif;
   }
 
   .language {
@@ -484,13 +482,114 @@ body{
     display: none;
   }
 
+  .menu {
+    padding-top: 150px;
+    width: 100%;
+    height: 1150%;
+  }
+
+  .menu__item {
+    padding: 30px 50px;
+    font: 500 25px/28px 'montserratmedium', arial, helvetica, sans-serif;
+  }
+
+  .collection {
+    margin: 0;
+    padding: 0;
+    background: center center no-repeat url(img/главная_mobil.svg);
+    background-size: 100%;
+  }
+
+  .collection__title {
+    width: 400px;
+    margin: 0;
+    padding: 125% 0 15px 26px;
+    font: bold 54px/57px 'montserratbold', arial, helvetica, sans-serif;
+  }
+
+  .collection__subtitle {
+    display: none;
+  }
+
+  .collection__recomend {
+    display: none;
+  }
+
+  .collection__arrow {
+    display: none;
+  }
+
+  .elements {
+    display: none;
+  }
+
+  .collection__mobile {
+    cursor: pointer;
+    margin-left: 43%;
+    padding-bottom: 41px;
+    display: inline-block;
+    position: relative;
+    width: 30px;
+    height: 15px;
+    color: #000;
+    z-index: 3;
+  }
+
+  .collection__mobile::after,
+  .collection__mobile::before {
+    content: '';
+    position: relative;
+    background-color: #020202;
+    width: 28px;
+    height: 4px;
+    transform: rotate(43deg);
+    float: right;
+  }
+
+  .collection__mobile::before {
+    top: 0px;
+    position: absolute;
+    left: 21px;
+    transform: rotate(137deg);
+  }
+
+  .collection__mobile {
+    animation: collection__mobile 1.2s linear 1s infinite;
+  }
+
+  @keyframes collection__mobile {
+    0% {
+      top: 0;
+    }
+    50%{
+      top: 10px;
+    }
+    100%{
+      top: 0;
+    }
+  }
+
+
+}
+
+@media (max-width: 414px) {
+  .header {
+    height: 69px;
+  }
+
+  .logo {
+    margin: 0;
+    padding: 14px 0 0 26px;
+    color: #000;
+  }
+
   .hamburger__menu {
     width: 0;
     height: 0;
   }
 
   .menu__btn {
-    top: 30px;
+    top: 28px;
     right: 22px;
     width: 26px;
     height: 3px;
@@ -525,40 +624,11 @@ body{
   }
 
   .collection {
-    margin: 0;
-    padding: 0;
-    background: center center no-repeat url(img/главная_mobil.svg);
     background-size: 100%;
   }
 
   .collection__title {
-    margin: 0;
-    padding: 118% 0 15px 26px;
-    font: bold 50px/51px 'montserratbold', arial, helvetica, sans-serif;
-  }
-
-  .collection__subtitle {
-    display: none;
-  }
-
-  .collection__button {
-    display: none;
-  }
-
-  .collection__recomend {
-    display: none;
-  }
-
-  .collection__arrow {
-    display: none;
-  }
-
-  .contacts__elements {
-    display: none;
-  }
-
-  .elements {
-    display: none;
+    padding: 116% 0 15px 26px;
   }
 
   .collection__mobile {
