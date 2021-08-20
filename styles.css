@@ -468,6 +468,7 @@ body{
   }
 
   .logo {
+    letter-spacing: .07em;
     padding-top: 30px;
     font: 500 34px/41px 'montserratmedium', arial, helvetica, sans-serif;
   }
@@ -568,8 +569,6 @@ body{
       top: 0;
     }
   }
-
-
 }
 
 @media (max-width: 414px) {
@@ -581,6 +580,7 @@ body{
     margin: 0;
     padding: 14px 0 0 26px;
     color: #000;
+    font: 500 30px/37px 'montserratmedium', arial, helvetica, sans-serif;
   }
 
   .hamburger__menu {
@@ -628,7 +628,9 @@ body{
   }
 
   .collection__title {
+    width: 340px;
     padding: 116% 0 15px 26px;
+    font: bold 50px/51px 'montserratbold', arial, helvetica, sans-serif;
   }
 
   .collection__mobile {
@@ -690,7 +692,3 @@ body{
     padding-bottom: 10%;
   }
 }
-
-
-
-
