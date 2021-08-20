@@ -377,6 +377,7 @@ body{
   .logo {
     margin: 0;
     padding: 14px 0 0 26px;
+    color: #000;
   }
 
   .language {
@@ -425,14 +426,14 @@ body{
   }
 
   .first__page {
-    background: none;
     height: 33%;
   }
 
   .collection {
     margin: 13% 0 0 0;
     padding: 0;
-    background: center center no-repeat url(img/главная_mobil.svg)
+    background: center center no-repeat url(img/главная_mobil.svg);
+    background-size: 100%;
   }
 
   .collection__title {
@@ -512,7 +513,7 @@ body{
   }
 }
 
-@media(max-width: 320px max-height: 568px) {
+@media(max-width: 320px) {
   .collection__title {
     margin-top: 20px;
     padding-top: 133%;
@@ -617,6 +618,5 @@ body{
   .helper__elements {
     margin-left: 38%;
   }
-  
 }
 
