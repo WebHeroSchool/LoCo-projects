@@ -388,15 +388,20 @@ body{
   }
 
   .collection__button {
-    display: none
+    display: none;
   }
 
   .collection__recomend {
     margin-right: 12px;
+    padding-left: 12px;
   }
 
   .collection__arrow {
     width: 40px;
+  }
+
+  .helper__elements {
+    margin-left: 28%;
   }
 }
 
@@ -411,7 +416,7 @@ body{
   }
 
   .language {
-    margin-left: 15%;
+    margin-left: 13%;
     color: #000;
   }
 
@@ -502,7 +507,7 @@ body{
   }
 
   .collection__title {
-    width: 400px;
+    width: 300px;
     margin: 0;
     padding: 125% 0 15px 26px;
     font: bold 54px/57px 'montserratbold', arial, helvetica, sans-serif;
