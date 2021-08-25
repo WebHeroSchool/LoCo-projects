@@ -583,8 +583,7 @@ body{
 
 .look__shopping-cart {
   position: relative;
-  display: inline;
-
+  display: inline-block;
   height: 15px;
   font: 500 13px/13px 'montserratmedium', arial, helvetica, sans-serif;
 }
