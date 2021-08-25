@@ -512,8 +512,8 @@ body{
   transform: rotate(-45deg);
 }
 
-.navigation__arrow {
-  animation: navigation__arrow 1.2s linear 1s infinite;
+.navigation__arrow:hover {
+  animation: navigation__arrow 1.2s linear 1s 1;
 }
 
 @keyframes navigation__arrow {
@@ -529,26 +529,28 @@ body{
 }
 
 .third__page {
-  position: relative;
   background: linear-gradient( to right, #ebe3d8 27%, #000 27%, #000 32%, #ebe3d8 32%);
   z-index: -1;
 }
 
 .look {
   position: relative;
-  height: 100%;
+  height: 548px;
   padding-top: 15%;
   margin-left: 3px;
-  background: 14% 68% no-repeat url(img/коллекция.svg);
+  background: 14% 50% no-repeat url(img/коллекция.svg);
+  z-index: 4;
 }
 
 .look__color {
   position: relative;
   margin-top: 39px;
   margin-left: calc(56% + 9px);
+  margin-bottom: 40px;
   width: 475px;
   height: 351px;
   background: #fae8e4;
+  z-index: 8;
 }
 
 .look__title {
@@ -570,22 +572,112 @@ body{
 .look__subtitle {
   padding-left: 50px;
   font: normal 15px/21px 'montserratregular', arial, helvetica, sans-serif;
-  margin-bottom: 17px;
+  margin-bottom: 55px;
 }
 
 .look__number {
   position: relative;
-  height: 15px;
-  width: 100px;
-  margin-right: 4px;
+  width: 63px;
+  margin-left: 47px;
+  margin-right: 15px;
+  padding: 12px 15px 14px 18px;
+  border: solid 2px #000;
   font: 500 15px/15px 'montserratmedium', arial, helvetica, sans-serif;
 }
 
-.look__shopping-cart {
-  position: relative;
+.look__minus,
+.look__lot,
+.look__plus {
+  margin: 0;
   display: inline-block;
+}
+
+.look__minus {
+  margin-right: 17px;
+  cursor: pointer;
+}
+
+.look__lot {
+  margin-right: 17px;
+}
+
+.look__plus{
+  cursor: pointer;
+}
+
+.look__shopping-cart {
+  position: absolute;
+  display: inline-block;
+  cursor: pointer;
+  margin-top: -45px;
+  margin-left: 162px;
+  padding: 15px 48px 11px 40px;
+  border: solid 2px #000;
   height: 15px;
   font: 500 13px/13px 'montserratmedium', arial, helvetica, sans-serif;
+}
+
+.navigation__look {
+  margin-top: -131px;
+}
+
+.look__products {
+  position: relative;
+  cursor: pointer;
+  font: 500 13px/16px 'montserratmedium', arial, helvetica, sans-serif;
+  padding-left: calc(66% - 2px);
+  width: 220px;
+  margin-bottom: 0;
+  margin-right: 10px;
+}
+
+.look__arrow {
+  display: inline-block;
+  margin-top: -8px;
+  margin-left: calc(82% + 3px);
+  cursor: pointer;
+  position: relative;
+  width: 108px;
+  height: 2px;
+  top: -3px;
+  left:0;
+  background-color: #000;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, .2);
+  margin-bottom: 240px;
+}
+
+.look__arrow::after,
+.look__arrow::before {
+  content: '';
+  position: absolute;
+  width: 7px;
+  height: 2px;
+  top: -3px;
+  right: 0;
+  background-color: #000;
+  transform: rotate(45deg);
+}
+
+.look__arrow::before {
+  top: 3px;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, .2);
+  transform: rotate(-45deg);
+}
+
+.look__arrow:hover {
+  animation: look__arrow 1.2s linear 1s 1;
+}
+
+@keyframes look__arrow {
+  0% {
+    left: 0;
+  }
+  50% {
+    left: 10px;
+  }
+  100% {
+    left: 0;
+  }
 }
 
 @media(min-width: 1650px) {
