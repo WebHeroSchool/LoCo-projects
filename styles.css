@@ -375,9 +375,7 @@ body{
   position: relative;
   display: inline-block;
   background: #dedede;
-  margin-bottom: 4px;
-  margin-left: 55px;
-  margin-right: 8px;
+  margin: 0 8px 4px 55px;
   width: 30px;
   height: 30px;
   border-radius: 50%;
@@ -459,6 +457,7 @@ body{
 
 .clutch__shopping-cart {
   position: absolute;
+  cursor: pointer;
   margin-top: -46px;
   margin-left: 170px;
   padding: 23px 46px 9px 40px;
@@ -999,19 +998,20 @@ body{
   }
 
   .collection {
+    margin-top: 13px;
     background-size: 100%;
   }
 
   .collection__title {
     width: 340px;
-    padding: 116% 0 15px 26px;
+    padding: 113% 0 15px 26px;
     font: bold 50px/51px 'montserratbold', arial, helvetica, sans-serif;
   }
 
   .collection__mobile {
     cursor: pointer;
     margin-left: 43%;
-    padding-bottom: 41px;
+    padding-bottom: 23px;
     display: inline-block;
     position: relative;
     width: 30px;
@@ -1053,7 +1053,168 @@ body{
       top: 0;
     }
   }
+
+  .second__page {
+    width: 100%;
+    padding-bottom: 52px;
+  }
+
+  .clutch {
+    padding-top: 0;
+    background: none;
+  }
+
+  .clutch__pink {
+    width: 100%;
+    height: 220px;
+    background-size: 60%;
+    background-position: 50% 82%;
+    padding-left: 0;
+    position: relative;
+    padding-bottom: 42px;
+  }
+
+  .clutch__color {
+    position: relative;
+    width: 320px;
+    height: 281px;
+    margin: auto;
+  }
+
+  .clutch__title {
+    margin: 0 0 3px 0;
+    padding: 20px 0 0 29px;
+    font: bold 20px/20px 'montserratbold',  arial, helvetica, sans-serif;
+  }
+
+  .clutch__collection {
+    margin: 0 0 14px 0;
+    padding: 0 0 0 31px;
+    font: bold 10px/10px 'montserratbold',  arial, helvetica, sans-serif;
+  }
+
+  .clutch__subtitle {
+    width: 255px;
+    margin: 0 0 14px 0;
+    padding: 0 0 0 31px;
+    font: normal 9px/13px 'montserratregular',  arial, helvetica, sans-serif;
+  }
+
+  .clutch__button {
+    width: 170px;
+  }
+
+  .color__white,
+  .color__blue,
+  .color__green {
+    width: 23px;
+    height: 23px;
+  }
+
+  .color__white {
+    margin-left: 34px;
+    margin-right: 5px;
+  }
+
+  .color__pink {
+    width: 30px;
+    height: 30px;
+    margin-right: 6px;
+  }
+
+  .color__blue {
+    margin-right: 5px;
+  }
+
+  .clutch__price {
+    font: bold 20px/28px 'montserratbold',  arial, helvetica, sans-serif;
+    padding-left: 69%;
+    top: -31px;
+  }
+
+  .clutch__number {
+    display: none;
+  }
+
+  .clutch__shopping-cart {
+    position: relative;
+    width: 170px;
+    margin: auto;
+    margin-top: -18px;
+    padding: 18px 38px 6px 48px;
+  }
+
+  .navigation {
+    display: none;
+  }
+
+  .third__page {
+    background: linear-gradient( to right, #ebe3d8 27%, #000 27%, #000 38%, #ebe3d8 38%)
+  }
+
+  .look {
+    height: 100%;
+    background-size: 93%;
+    background-position: 50% 17%;
+    padding-top: 69%;
+  }
+
+  .look__color {
+    width: 305px;
+    height: 195px;
+    margin: auto;
+    margin-left: 11%;
+  }
+
+  .look__title {
+    font: bold 20px/20px 'montserratbold',  arial, helvetica, sans-serif;
+    padding-left: 25px;
+    padding-top: 25px;
+    margin-bottom: 6px;
+  }
+
+  .look__collection {
+    font: bold 10px/10px 'montserratbold',  arial, helvetica, sans-serif;
+    padding-left: 25px;
+    margin-bottom: 10px;
+  }
+
+  .look__subtitle {
+    font: normal 9px/13px 'montserratregular',  arial, helvetica, sans-serif;
+    padding-left: 25px;
+  }
+
+  .look__number {
+    display: none;
+  }
+
+  .look__shopping-cart {
+    width: 180px;
+    margin-left: 24px;
+    margin-top: -35px;
+    border: solid 1px #000;
+    padding: 12px 31px 8px 47px;
+  }
+
+  .navigation__look {
+    margin-top: 39px;
+  }
+
+  .look__products {
+    padding-left: 50%;
+    width: 150px;
+    font: 500 15px/18px 'montserratmedium',  arial, helvetica, sans-serif;
+  }
+
+  .look__arrow {
+    width: 134px;
+    margin-top: 11px;
+    margin-left: calc(50% + 1px);
+    margin-bottom: 36px;
+  }
 }
+
+
 
 @media(max-width: 320px) {
   .collection__title {
