@@ -1534,13 +1534,15 @@ body{
 
   .clutch__pink {
     height: 220px;
+    padding-bottom: 40px;
   }
 
   .clutch__color {
     position: relative;
     width: 320px;
-    height: 281px;
-    
+    height: 283px;
+    padding-bottom: 0;
+    top: 0;
   }
 
   .clutch__title {
@@ -1604,6 +1606,7 @@ body{
     margin: auto;
     margin-top: -18px;
     padding: 18px 38px 6px 48px;
+    font: 500 13px/0 'montserratmedium',  arial, helvetica, sans-serif;
   }
 
   .navigation {
@@ -1616,12 +1619,14 @@ body{
 
   .look {
     background-position: 50% 17%;
+    padding-top: 39%;
   }
 
   .look__color {
     width: 305px;
     height: 195px;
     margin-left: 11%;
+    margin-top: 126px;
   }
 
   .look__title {
@@ -1651,11 +1656,13 @@ body{
     margin-left: 24px;
     margin-top: -35px;
     border: solid 1px #000;
-    padding: 12px 31px 8px 47px;
+    padding: 20px 31px 1px 47px;
+    font: 500 13px/0 'montserratmedium',  arial, helvetica, sans-serif;
   }
 
   .navigation__look {
     margin-top: 39px;
+    padding-bottom: 1px;
   }
 
   .look__products {
