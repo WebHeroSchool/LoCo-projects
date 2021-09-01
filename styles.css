@@ -3,10 +3,6 @@ body{
   margin: 0;
 }
 
-.wrapper {
-  min-width: 240px;
-}
-
 .header {
   z-index: 50;
   top: 0;
@@ -1685,6 +1681,9 @@ body{
 
 
 @media(max-width: 320px) {
+  .wrapper{
+    min-width: 240px;
+  }
   .collection__title {
     width: 250px;
     margin-top: 20px;
