@@ -1,13 +1,15 @@
 
 body{
   margin: 0;
+  width: 1440px;
+  margin: auto;
 }
 
 .header {
   z-index: 50;
   top: 0;
   position: fixed;
-  width: 100%;
+  width: 1440px;
   background: linear-gradient( to left, #fff 68%, #000 32%);
 }
 
@@ -1684,6 +1686,7 @@ body{
   .wrapper{
     min-width: 240px;
   }
+
   .collection__title {
     width: 250px;
     margin-top: 20px;
