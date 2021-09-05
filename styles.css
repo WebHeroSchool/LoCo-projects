@@ -792,7 +792,7 @@ body{
   .collection {
     background-size: 43%;
     margin-left: 10%;
-    padding-top: 22%;
+    padding-top: 12%;
     padding-bottom: 13%;
   }
 
@@ -1211,9 +1211,15 @@ body{
   }
 }
 @media(max-width: 580px) {
+  body {
+    max-width: 580px;
+  }
+
   .header {
+    max-width: 580px;
     height: 90px;
   }
+
   .logo {
     letter-spacing: .07em;
     padding-top: 30px;
@@ -1359,7 +1365,12 @@ body{
   }
 }
 @media (max-width: 414px) {
+  body {
+    max-width: 414px;
+  }
+
   .header {
+    max-width: 414px;
     height: 69px;
   }
   .logo {
