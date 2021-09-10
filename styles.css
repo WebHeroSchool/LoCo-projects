@@ -1366,11 +1366,11 @@ body{
 }
 @media (max-width: 414px) {
   body {
-    max-width: 414px;
+    max-width: 375px;
   }
 
   .header {
-    max-width: 414px;
+    max-width: 375px;
     height: 69px;
   }
   .logo {
