@@ -1499,6 +1499,9 @@ body{
     height: 283px;
     padding-bottom: 0;
     top: 0;
+    -webkit-box-shadow: 3px 5px 14px 0px rgba(50, 50, 50, 0.39);
+    -moz-box-shadow: 3px 5px 14px 0px rgba(50, 50, 50, 0.39);
+    box-shadow: 3px 5px 14px 0px rgba(50, 50, 50, 0.39);
   }
 
   .clutch__title {
