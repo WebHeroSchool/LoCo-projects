@@ -1269,14 +1269,16 @@ body{
   .collection__mobile {
     cursor: pointer;
     margin-left: 43%;
-    padding-bottom: 41px;
+    padding-bottom: 30px;
     display: inline-block;
     position: relative;
     width: 30px;
     height: 15px;
     color: #000;
     z-index: 3;
+    animation: collection__mobile 1.2s linear 1s infinite;
   }
+
   .collection__mobile::after,
   .collection__mobile::before {
     content: '';
@@ -1287,15 +1289,14 @@ body{
     transform: rotate(43deg);
     float: right;
   }
+
   .collection__mobile::before {
     top: 0px;
     position: absolute;
     left: 21px;
     transform: rotate(137deg);
   }
-  .collection__mobile {
-    animation: collection__mobile 1.2s linear 1s infinite;
-  }
+
   @keyframes collection__mobile {
     0% {
       top: 0;
@@ -1443,6 +1444,7 @@ body{
     height: 15px;
     color: #000;
     z-index: 3;
+    animation: collection__mobile 1.2s linear 1s infinite;
   }
 
   .collection__mobile::after,
@@ -1461,10 +1463,6 @@ body{
     position: absolute;
     left: 23px;
     transform: rotate(137deg);
-  }
-
-  .collection__mobile {
-    animation: collection__mobile 1.2s linear 1s infinite;
   }
 
   @keyframes collection__mobile {
@@ -1553,6 +1551,7 @@ body{
     font: bold 20px/28px 'montserratbold',  arial, helvetica, sans-serif;
     padding-left: 69%;
     top: -31px;
+    margin-bottom: 0;
   }
 
   .clutch__number {
@@ -1563,8 +1562,7 @@ body{
     position: relative;
     width: 170px;
     margin: auto;
-    margin-top: -18px;
-    padding: 18px 38px 6px 48px;
+    padding: 17px 38px 6px 48px;
     font: 500 13px/0 'montserratmedium',  arial, helvetica, sans-serif;
   }
 
@@ -1652,8 +1650,7 @@ body{
   }
 
   .collection {
-    background-size: 108%;
-    padding-bottom: 10%;
+    background-size: 110%;
   }
 
   .clutch__color {
