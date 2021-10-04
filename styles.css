@@ -977,6 +977,7 @@ body{
   }
 
   .clutch__subtitle {
+    width: 360px;
     padding-left: 23px;
     margin-bottom: 30px;
   }
@@ -1107,12 +1108,13 @@ body{
   }
   .clutch__pink {
     width: 300px;
+    margin-left: 8%;
     padding-left: 5%;
-    background-size: 68%;
+    background-size: 95%;
     background-position: 24% 15%;
   }
   .clutch__color {
-    margin-left: 42%;
+    margin-left: 52%;
     width: 335px;
     height: 380px;
   }
@@ -1166,7 +1168,7 @@ body{
   }
   .navigation__products {
     top: -49px;
-    padding-left: 43%;
+    padding-left: 53%;
     padding-bottom: 110px;
     font: 500 12px/13px 'montserratmedium', arial, helvetica, sans-serif;
   }
@@ -1180,7 +1182,7 @@ body{
   }
   .look__color {
     margin-top: 87px;
-    margin-left: 45%;
+    margin-left: 57%;
     width: 318px;
     height: 240px;
   }
@@ -1197,15 +1199,17 @@ body{
   }
   .look__subtitle {
     padding-left: 20px;
-    width: 300px;
+    width: 290px;
     font: normal 13px/15px 'montserratregular', arial, helvetica, sans-serif;
   }
   .look__shopping-cart {
+    margin-top: -38px;
     margin-left: 45px;
     padding: 20px 48px 7px 40px;
     font: 500 12px/0 'montserratmedium', arial, helvetica, sans-serif;
   }
   .look__products {
+    padding-left: 67%;
     margin-top: 1px;
     font: 500 12px/15px 'montserratmedium', arial, helvetica, sans-serif;
   }
@@ -1268,7 +1272,7 @@ body{
   }
   .collection__mobile {
     cursor: pointer;
-    margin-left: 43%;
+    margin-left: 46%;
     padding-bottom: 30px;
     display: inline-block;
     position: relative;
@@ -1309,6 +1313,7 @@ body{
     }
   }
   .clutch__pink {
+    margin-left: 0;
     width: 100%;
     height: 265px;
     background-size: 60%;
