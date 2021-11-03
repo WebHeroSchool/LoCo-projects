@@ -795,12 +795,11 @@ footer {
 
   .look__products {
     width: 270px;
-    padding-left: 62%;
     font: 500 15px/0 'montserratmedium', arial, helvetica, sans-serif;
   }
 
   .look__arrow {
-    margin-left: 77%;
+    margin-left: calc(84% + 3px);
     margin-top: 0;
   }
 }
